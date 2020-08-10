@@ -148,7 +148,7 @@
         .then(([bchabc, bch]) => {
             console.log(bchabc, bch);
             const percentage = (bchabc / bch * 100).toFixed(0);
-            const tax_income = parseInt((bchabc*144*365*0.08).toFixed(0), 10).toLocaleString();
+            const tax_income = parseInt((bchabc*6.25*144*365*0.08).toFixed(0), 10).toLocaleString();
 
             console.log(`${percentage}% $${tax_income}`);
             document.getElementById('percentage').innerHTML = `ABC is worth <span class="big">${percentage}%</span> of BCH`;
